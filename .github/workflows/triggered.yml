@@ -2,8 +2,8 @@ name: triggered after mybuild.yml completed
 on:
    workflow_run:
       workflows: ["My Build"]
-         types:
-            - completed
+      types:
+         - completed
 jobs:
    triggered_on_complete:
       runs-on: ubuntu-latest
